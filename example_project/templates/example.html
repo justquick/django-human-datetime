@@ -1,0 +1,16 @@
+<form method="post">{% csrf_token %}
+<p><label for="id_datetime">DateTime:</label>
+    <input id="id_datetime" value="{{ input.datetime }}"  type="text" name="datetime"/>
+    {% if dates.datetime %} = {{ dates.datetime }}{% endif %}
+</p>
+<p><label for="id_date">Date:</label>
+    <input type="text" value="{{ input.date }}"  name="date" id="id_date" />
+    {% if dates.date %} = {{ dates.date }}{% endif %}
+</p>
+<p><label for="id_time">Time:</label>
+    <input type="text" value="{{ input.time }}" name="time" id="id_time" />
+    {% if dates.time %} = {{ dates.time }}{% endif %}
+</p>
+<input type="submit" value="Submit" />
+</form>
+
