@@ -27,8 +27,8 @@ Download the most recent sourcecode and start up the development server. Make su
 
     git clone git://github.com/justquick/django-human-datetime.git
     cd django-human-datetime
-    python setup.py install # sudo this
-    pip install django # and this
+    pip install parsedatetime pytz django
+    python setup.py install
     cd example_project
     python manage.py runserver
     

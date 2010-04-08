@@ -1,5 +1,5 @@
 from distutils.core import setup
-from actstream import __version__
+from humandt import __version__
 
 setup(name='django-human-datetime',
     version=__version__,
@@ -9,7 +9,7 @@ setup(name='django-human-datetime',
     author_email='justquick@gmail.com',
     url='http://github.com/justquick/django-human-datetime',
     packages=['humandt'],
-    install_requires=['parsedatetime','pytz',],
+    requires=['parsedatetime','pytz',],
     classifiers=['Development Status :: 4 - Beta',
                  'Environment :: Web Environment',
                  'Intended Audience :: Developers',
