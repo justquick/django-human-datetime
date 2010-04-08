@@ -5,7 +5,7 @@ Django Human DateTime Parsing
    Justin Quick <justquick@gmail.com>
 :Version: 0.1
 
-This tool uses the `parsedatetime package <http://code.google.com/p/parsedatetime/`_ to turn human readable form input (like 'tomorrow 7PM') into ``datetime`` objects (like datetime.datetime(2010, 4, 9, 19, ...)).
+This tool uses the `parsedatetime package <http://code.google.com/p/parsedatetime/>`_ to turn human readable form input (like 'tomorrow 7PM') into ``datetime`` objects (like datetime.datetime(2010, 4, 9, 19, ...)).
 This app requires ``parsedatetime`` and ``pytz``. 
 The app comes with a set of fields to replace Django's own DateTimeField, DateField, and TimeField. Get them by using::
 
