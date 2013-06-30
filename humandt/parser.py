@@ -4,7 +4,7 @@ from django.conf import settings
 
 try:
     import parsedatetime as pdt
-    from parsedatetime import Constants as pdc
+    from parsedatetime import Constants
     from pytz import timezone
 except ImportError:
     raise ImproperlyConfigured('Need to install parsedatetime and pytz')
