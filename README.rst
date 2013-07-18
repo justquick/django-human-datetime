@@ -37,3 +37,5 @@ To test the humandt app, stop the server and run this::
 
     python manage.py test humandt
     
+    
+Tested working with Django 1.5.

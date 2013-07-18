@@ -3,8 +3,8 @@ from django.core.exceptions import ImproperlyConfigured
 from django.conf import settings
 
 try:
-    import parsedatetime.parsedatetime as pdt
-    import parsedatetime.parsedatetime_consts as pdc
+    import parsedatetime as pdt
+    from parsedatetime import Constants
     from pytz import timezone
 except ImportError:
     raise ImproperlyConfigured('Need to install parsedatetime and pytz')
@@ -15,4 +15,4 @@ def parse(s):
     """
     Parse the string using parsedatetime and format it to the current timezone
     """
-    return TZ.localize(datetime(*tuple(pdt.Calendar(pdc.Constants()).parse(s)[0])[:7]))
+    return TZ.localize(datetime(*tuple(pdt.Calendar(Constants()).parse(s)[0])[:7]))
